@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Calculation</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main class="p-5 ">
+        <div class="gap-5 lg:flex">
+            <div class="flex-1 grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+                <!-- first card -->
+                <div class="card text-center bg-base-100 shadow-xl">
+                    <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+                    <div class="card-body gap-4">
+                        <h2 class="card-title justify-center">Triangle</h2>
+                        <p>Area (A) = 0.5 x b x h</p>
+                        <p>
+                            <input id="triangle-b-field" type="number" placeholder="base" class="rounded-md w-24 bg-gray-300 px-2 py-1"><span>
+                                cm</span>
+                            <input id="triangle-h-field"  type="number" placeholder="height"
+                                class="rounded-md w-24 bg-gray-300 px-2 py-1"><span>
+                                cm</span>
+                        </p>
+                        <p>Area: <span id="triangle-area">0 </span> cm<sup>2</sup></p>
+                        <div class="card-actions">
+                            <button id="btn-triangle" class="w-full btn btn-primary">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- second card -->
+                <div class="card text-center bg-base-100 shadow-xl">
+                    <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
+                    <div class="card-body gap-4">
+                        <h2 class="card-title justify-center">Rectangle</h2>
+                        <p>Area (A) = w x l</p>
+                        <p>
+                            <input id="rectangle-w-field" type="number" placeholder="width" class="rounded-md w-24 bg-gray-300 px-2 py-1"><span>
+                                cm</span>
+                            <input id="rectangle-l-field" type="number" placeholder="length"
+                                class="rounded-md w-24 bg-gray-300 px-2 py-1"><span>
+                                cm</span>
+                        </p>
+                        <p>Area: <span id="rectangle-area">0 </span> cm<sup>2</sup></p>
+                        <div class="card-actions">
+                            <button id="btn-rectangle" class="w-full btn btn-primary">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- third card -->
+                <div class="card text-center bg-base-100 shadow-xl">
+                    <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
+                    <div class="card-body gap-4">
+                        <h2 class="card-title justify-center">Parallelogram</h2>
+                        <p>Area (A) =b x h</p>
+                        <p>
+                            <input id="parallelogram-b-field" type="number" placeholder="base" class="rounded-md w-24 bg-gray-300 px-2 py-1"><span>
+                                cm</span>
+                            <input id="parallelogram-h-field" type="number" placeholder="height"
+                                class="rounded-md w-24 bg-gray-300 px-2 py-1"><span>
+                                cm</span>
+                        </p>
+                        <p>Area: <span id="parallelogram-area">0 </span> cm<sup>2</sup></p>
+                        <div class="card-actions">
+                            <button id="btn-parallelogram" class="w-full btn btn-primary">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border min-w-[300px] p-5 rounded-lg text-center">
+                <h4 class="text-2xl underline ">Area Calculation</h4>
+                <div id="area-calculation-list">
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="js/utilities.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
